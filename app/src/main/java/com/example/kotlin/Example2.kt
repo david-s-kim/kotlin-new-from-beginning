@@ -4,6 +4,7 @@ fun main() {
     val result = test(1, c = 5)
     println(result)
     test2(name = "상아님", "채상아", "상아")
+    test3(1,3)
 }
 
 // 2. 함수
