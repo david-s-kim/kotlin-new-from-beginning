@@ -7,9 +7,9 @@ fun main() {
     println()
 }
 
-open class User(open val name: String,open val age: Int = 100)
+open class User(open val name: String, open val age: Int = 100)
 
-class Kid(override val name: String, override var age: Int) :User(name, age) {
+class Kid(override val name: String, override var age: Int) : User(name, age) {
     var gender: String = "female"
 
     // 클래스 안에서 가장먼저 호출되는 부분
@@ -17,7 +17,7 @@ class Kid(override val name: String, override var age: Int) :User(name, age) {
         println("초기화 중입니다.")
     }
 
-    constructor(name: String, age: Int, gender: String): this(name, age){
+    constructor(name: String, age: Int, gender: String) : this(name, age) {
         this.gender = gender
         println("부생성자 호출")
     }
