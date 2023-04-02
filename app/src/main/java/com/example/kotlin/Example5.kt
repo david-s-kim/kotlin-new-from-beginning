@@ -1,6 +1,5 @@
 package com.example.kotlin
 
-import java.time.DayOfWeek
 
 fun main() {
     max(10, 3)
