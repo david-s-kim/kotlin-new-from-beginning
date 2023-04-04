@@ -25,7 +25,7 @@ fun isHoliday(dayOfWeek: String) {
 fun isHolidays(dayOfWeek: Any) {
     when (val day = dayOfWeek) {
         "토",
-        "일" -> if(day == "토") "좋아" else "너무 좋아"
+        "일" -> if (day == "토") "좋아" else "너무 좋아"
         in 2..4 -> {}
         in listOf("월", "화") -> {}
         else -> "안좋아"
